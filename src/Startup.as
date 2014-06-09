@@ -13,6 +13,7 @@ package
 		public function Startup()
 		{
 			_starling = new Starling(Game, Stage(stage));
+			_starling.enableErrorChecking = true;
 			_starling.start();
 		}
 	}

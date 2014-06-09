@@ -24,17 +24,16 @@ package
 		private var input:TextInput;
 		public function Game()
 		{
+			//new MetalWorksMobileTheme();
 			wordDictionnaryManager = new WordDictionaryManager();
 			textField = new TextField(400, 300, "Welcome to hell!");
 			addChild(textField);
 			
-			new MetalWorksMobileTheme();
-			
 			input = new TextInput();
-			input.width = this.width;
+			input.width = 400;
 			input.height = 30;
 			input.textEditorProperties.fontFamily = "Helvetica";
-			input.textEditorProperties.fontSize = 300;
+			input.textEditorProperties.fontSize = 15;
 			input.addEventListener(FeathersEventType.ENTER, input_enterHandler);
 			
 			input.y = this.height - input.height;
